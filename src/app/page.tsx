@@ -33,21 +33,21 @@ const trustBadges = [
 
 const placeholderReviews = [
   {
-    name: 'Sarah M.',
-    location: 'Rogers, AR',
-    text: "Hired Boss Hog for my daughter's UARK move-out. They were on time, careful with her furniture, and finished faster than expected. So glad we found them! Will definitely use again next year.",
-    stars: 5,
-  },
-  {
-    name: 'Linda K.',
-    location: 'UARK Parent, Nashville TN',
-    text: "As a UARK mom 8 hours away, I was nervous about my son's move. Boss Hog communicated every step of the way and made it seamless. The crew was professional and so kind. 100% recommend!",
-    stars: 5,
-  },
-  {
-    name: 'Mike T.',
+    name: 'Beverly C.',
     location: 'Fayetteville, AR',
-    text: 'Professional crew, fair pricing, and no hidden fees. Moved our whole house from Fayetteville to Springdale in one day. Everything arrived in perfect condition.',
+    text: "Cameron and Matthew went above and beyond helping me move. They communicated well, super professional, and true to their word. They are hardworking and very kind. They are prompt and show up ready to work. I would definitely use them again should the occasion arise!",
+    stars: 5,
+  },
+  {
+    name: 'Noelle G.',
+    location: 'UARK Parent',
+    text: "Garrett and Cole were amazing!! They unloaded 2 cars worth of boxes, bags and furniture!! After moving it all in - they put together 2 futons, 1 floor lamp, a rolling TV cart and 2 table lamps. Never complained - always had smiles on! They made our move in day so easy!!!!",
+    stars: 5,
+  },
+  {
+    name: 'Melanie M.',
+    location: 'UARK Parent',
+    text: "Once again Cameron and crew came through for us! Our move-in help fell short so I texted Cameron at 11:30pm. Early the next morning he had us set up with help for that day. Professional, highly responsive, prompt, courteous, efficient and respectful of our things.",
     stars: 5,
   },
 ]
@@ -257,7 +257,7 @@ export default function HomePage() {
                 </svg>
               ))}
             </div>
-            <p className="text-gray-500 text-sm">5.0 average · 100+ Google reviews</p>
+            <p className="text-gray-500 text-sm">5.0 average · Verified customer reviews</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
