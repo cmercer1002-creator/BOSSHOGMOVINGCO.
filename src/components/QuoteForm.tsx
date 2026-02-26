@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import Link from 'next/link'
 import { PHONE_HREF, PHONE_DISPLAY } from '@/lib/constants'
 
 interface FormData {
@@ -224,9 +223,9 @@ export default function QuoteForm({
                 <div className="bg-red-50 border border-red-200 rounded-xl p-3 text-center">
                   <p className="text-red-700 text-sm">
                     {message}{' '}
-                    <Link href={PHONE_HREF} className="font-semibold underline">
+                    <a href={PHONE_HREF} className="font-semibold underline">
                       {PHONE_DISPLAY}
-                    </Link>
+                    </a>
                   </p>
                 </div>
               )}

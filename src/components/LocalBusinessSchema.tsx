@@ -1,4 +1,4 @@
-import { COMPANY_NAME, PHONE_DISPLAY, SITE_URL, SERVICE_AREAS } from '@/lib/constants'
+import { COMPANY_NAME, PHONE_DISPLAY, EMAIL, SITE_URL, SERVICE_AREAS } from '@/lib/constants'
 
 export default function LocalBusinessSchema() {
   const schema = {
@@ -9,6 +9,7 @@ export default function LocalBusinessSchema() {
       "Fayetteville's trusted local moving company serving students, homes, and businesses across Northwest Arkansas.",
     url: SITE_URL,
     telephone: PHONE_DISPLAY,
+    email: EMAIL,
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Fayetteville',

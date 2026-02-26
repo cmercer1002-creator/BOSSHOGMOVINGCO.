@@ -153,7 +153,7 @@ export default function HomePage() {
                   },
                   {
                     title: 'Transparent Pricing',
-                    desc: 'No surprise fees. You get a clear quote before we start, and that&apos;s what you pay.',
+                    desc: "No surprise fees. You get a clear quote before we start, and that's what you pay.",
                   },
                 ].map((item) => (
                   <li key={item.title} className="flex gap-4">
