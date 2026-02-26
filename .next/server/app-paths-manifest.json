@@ -1,4 +1,7 @@
 {
+  "/uark-student-moving/page": "app/uark-student-moving/page.js",
+  "/summer-hold/page": "app/summer-hold/page.js",
+  "/student-storage/page": "app/student-storage/page.js",
   "/reviews/page": "app/reviews/page.js",
   "/page": "app/page.js"
 }
