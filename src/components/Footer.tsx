@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import {
   PHONE_DISPLAY,
   PHONE_HREF,
@@ -16,8 +17,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand column */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <div className="text-xl font-extrabold text-white mb-3">
-              🐷 <span className="text-red-500">Boss Hog</span> Moving Co.
+            <div className="mb-4">
+              <Image
+                src="/logo.png"
+                alt="Boss Hog Moving Co."
+                width={72}
+                height={72}
+                className="h-16 w-auto"
+              />
             </div>
             <p className="text-sm text-gray-400 mb-5 leading-relaxed">
               Fayetteville&apos;s locally owned moving company. Trusted by UARK families,

@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { PHONE_DISPLAY, PHONE_HREF, PHONE_TEXT_DISPLAY, PHONE_TEXT_HREF, BOOK_URL } from '@/lib/constants'
 
 const navLinks = [
@@ -23,12 +24,15 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 shrink-0">
-            <span className="text-lg font-extrabold text-gray-900 leading-none tracking-tight">
-              🐷{' '}
-              <span className="text-red-600">Boss Hog</span>{' '}
-              <span className="hidden sm:inline">Moving Co.</span>
-            </span>
+          <Link href="/" className="flex items-center shrink-0">
+            <Image
+              src="/logo.png"
+              alt="Boss Hog Moving Co."
+              width={48}
+              height={48}
+              className="h-12 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}
