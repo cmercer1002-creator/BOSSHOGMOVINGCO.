@@ -9,6 +9,7 @@ const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/uark-student-moving', label: 'UARK Moves' },
   { href: '/student-storage', label: 'Storage' },
+  { href: '/summer-hold', label: 'Summer Hold' },
   { href: '/residential-moving', label: 'Residential' },
   { href: '/commercial-moving', label: 'Commercial' },
   { href: '/service-areas', label: 'Service Areas' },

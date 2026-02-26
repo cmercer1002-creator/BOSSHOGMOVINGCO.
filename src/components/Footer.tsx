@@ -76,6 +76,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/summer-hold" className="hover:text-white transition-colors">
+                  Summer Hold Package
+                </Link>
+              </li>
+              <li>
                 <Link href="/residential-moving" className="hover:text-white transition-colors">
                   Residential Moving
                 </Link>

@@ -32,6 +32,16 @@ const moves = [
     badge: null,
     cta: 'Book Commercial Move',
   },
+  {
+    icon: '🏖️',
+    label: 'Summer Hold Package',
+    description:
+      'Move out once. We store everything over the summer and deliver to your new place at move-in. Starting at $549 for dorms.',
+    href: '/summer-hold',
+    highlight: false,
+    badge: 'New',
+    cta: 'See Pricing',
+  },
 ]
 
 export default function ChooseYourMove() {
@@ -48,7 +58,7 @@ export default function ChooseYourMove() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 lg:gap-8">
           {moves.map((move) => (
             <div
               key={move.href}

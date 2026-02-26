@@ -99,13 +99,13 @@ export default function HomePage() {
               🎓 UARK Parents &amp; Students
             </span>
             <p className="text-white font-semibold text-lg mb-4">
-              May Move-Out &amp; Summer Storage Packages — Book Early Before Dates Fill Up!
+              Summer Hold Package — Move Out Once, Done Until Fall. Starting at $549.
             </p>
             <Link
-              href="/uark-student-moving"
+              href="/summer-hold"
               className="inline-block bg-amber-400 text-gray-900 font-bold text-sm px-6 py-3 rounded-xl hover:bg-amber-300 transition-colors"
             >
-              See UARK Packages →
+              See Summer Hold Pricing →
             </Link>
           </div>
         </div>
