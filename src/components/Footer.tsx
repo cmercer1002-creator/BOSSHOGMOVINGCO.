@@ -1,0 +1,138 @@
+import Link from 'next/link'
+import { PHONE_DISPLAY, PHONE_HREF, BOOK_URL, COMPANY_NAME, EMAIL } from '@/lib/constants'
+
+export default function Footer() {
+  return (
+    <footer className="bg-gray-900 text-gray-400">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+          {/* Brand column */}
+          <div className="sm:col-span-2 lg:col-span-1">
+            <div className="text-xl font-extrabold text-white mb-3">
+              🐷 <span className="text-red-500">Boss Hog</span> Moving Co.
+            </div>
+            <p className="text-sm text-gray-400 mb-5 leading-relaxed">
+              Fayetteville&apos;s locally owned moving company. Trusted by UARK families,
+              homeowners, and businesses across Northwest Arkansas.
+            </p>
+            <div className="space-y-1.5 text-sm">
+              <a
+                href={PHONE_HREF}
+                className="flex items-center gap-2 text-red-400 hover:text-red-300 font-semibold transition-colors"
+              >
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                </svg>
+                {PHONE_DISPLAY}
+              </a>
+              <a
+                href={`mailto:${EMAIL}`}
+                className="flex items-center gap-2 hover:text-white transition-colors"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                {EMAIL}
+              </a>
+            </div>
+          </div>
+
+          {/* Services */}
+          <div>
+            <h3 className="text-white font-bold mb-4 text-sm uppercase tracking-wider">Services</h3>
+            <ul className="space-y-2.5 text-sm">
+              <li>
+                <Link href="/uark-student-moving" className="hover:text-white transition-colors">
+                  UARK Student Moving
+                </Link>
+              </li>
+              <li>
+                <Link href="/student-storage" className="hover:text-white transition-colors">
+                  Student Storage
+                </Link>
+              </li>
+              <li>
+                <Link href="/residential-moving" className="hover:text-white transition-colors">
+                  Residential Moving
+                </Link>
+              </li>
+              <li>
+                <Link href="/commercial-moving" className="hover:text-white transition-colors">
+                  Commercial Moving
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Service Areas */}
+          <div>
+            <h3 className="text-white font-bold mb-4 text-sm uppercase tracking-wider">
+              Service Areas
+            </h3>
+            <ul className="space-y-2.5 text-sm">
+              {['Fayetteville', 'Springdale', 'Rogers', 'Bentonville', 'Bella Vista', 'Lowell'].map(
+                (city) => (
+                  <li key={city}>
+                    <Link href="/service-areas" className="hover:text-white transition-colors">
+                      {city}
+                    </Link>
+                  </li>
+                )
+              )}
+              <li>
+                <Link
+                  href="/service-areas"
+                  className="text-red-400 hover:text-red-300 font-medium transition-colors"
+                >
+                  View All Areas →
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Company */}
+          <div>
+            <h3 className="text-white font-bold mb-4 text-sm uppercase tracking-wider">Company</h3>
+            <ul className="space-y-2.5 text-sm mb-6">
+              <li>
+                <Link href="/reviews" className="hover:text-white transition-colors">
+                  Customer Reviews
+                </Link>
+              </li>
+              <li>
+                <Link href="/service-areas" className="hover:text-white transition-colors">
+                  Service Areas
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-white transition-colors">
+                  Get a Free Quote
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-white transition-colors">
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
+            <Link
+              href={BOOK_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-red-600 text-white text-sm font-bold px-5 py-2.5 rounded-lg hover:bg-red-700 transition-colors"
+            >
+              Book Online →
+            </Link>
+          </div>
+        </div>
+
+        <div className="border-t border-gray-800 mt-12 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-gray-600">
+          <p>
+            © {new Date().getFullYear()} {COMPANY_NAME}. All rights reserved. Fayetteville, AR.
+          </p>
+          <p>Licensed &amp; Insured · Serving Northwest Arkansas</p>
+        </div>
+      </div>
+    </footer>
+  )
+}
