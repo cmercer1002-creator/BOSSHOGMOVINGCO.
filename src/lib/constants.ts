@@ -13,6 +13,8 @@ export const COMPANY_NAME = 'Boss Hog Moving Co.'
 export const COMPANY_CITY = 'Fayetteville'
 export const COMPANY_STATE = 'AR'
 export const SITE_URL = 'https://bosshogmoving.com'
+export const FACEBOOK_URL = 'https://www.facebook.com/profile.php?id=61583929144253'
+export const INSTAGRAM_URL = 'https://www.instagram.com/bosshogmovingco/'
 
 export const SERVICE_AREAS = [
   'Fayetteville',
