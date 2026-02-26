@@ -9,7 +9,7 @@ import { BOOK_URL, PHONE_HREF, PHONE_DISPLAY } from '@/lib/constants'
 export const metadata: Metadata = {
   title: 'Residential Moving Services Fayetteville AR | Boss Hog Moving',
   description:
-    'Full-service residential moving in Fayetteville, AR and across Northwest Arkansas. Local moves, long-distance, packing, and more. Licensed & insured. Free quotes.',
+    'Full-service residential moving in Fayetteville, AR and across Northwest Arkansas. Local moves, long-distance, packing, and more. Fully insured. Free quotes.',
   keywords: [
     'residential movers Fayetteville AR',
     'local moving company NWA',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Residential Moving Services Fayetteville AR | Boss Hog Moving',
     description:
-      'Full-service residential moving in Fayetteville and across Northwest Arkansas. Licensed, insured, free quotes.',
+      'Full-service residential moving in Fayetteville and across Northwest Arkansas. Fully insured, free quotes.',
     url: 'https://bosshogmoving.com/residential-moving',
   },
 }
@@ -38,9 +38,9 @@ const faqs = [
       'Yes! We offer full packing services and can supply boxes, packing paper, bubble wrap, and other materials. Whether you want us to pack everything or just a few fragile items, we can customize the service to fit your needs and budget.',
   },
   {
-    question: 'Are you licensed and insured in Arkansas?',
+    question: 'Are you insured for residential moves in Arkansas?',
     answer:
-      'Absolutely. Boss Hog Moving Co. is fully licensed and insured to operate in Arkansas. Your belongings are protected during every step of the move. We carry liability coverage and can provide proof of insurance upon request.',
+      'Yes. Boss Hog Moving Co. carries full liability insurance on every residential move in Arkansas. Your belongings are protected from pickup to delivery. We can provide proof of insurance upon request.',
   },
   {
     question: 'What areas do you serve for residential moves?',
@@ -87,7 +87,7 @@ export default function ResidentialMovingPage() {
       <section className="bg-gray-900 py-6 px-4">
         <div className="max-w-5xl mx-auto flex flex-wrap justify-center gap-8 text-center">
           {[
-            '✅ Licensed & Insured',
+            '✅ Insured & Covered',
             '📍 Local NWA Team',
             '💬 Free Quotes',
             '📅 Mon–Sat Availability',

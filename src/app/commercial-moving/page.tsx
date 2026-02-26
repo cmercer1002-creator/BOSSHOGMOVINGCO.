@@ -9,7 +9,7 @@ import { BOOK_URL, PHONE_HREF, PHONE_DISPLAY } from '@/lib/constants'
 export const metadata: Metadata = {
   title: 'Commercial Moving Services Fayetteville AR | Boss Hog Moving',
   description:
-    'Professional office and commercial moving in Fayetteville, AR and Northwest Arkansas. Minimal downtime, licensed & insured, weekend availability. Free quotes.',
+    'Professional office and commercial moving in Fayetteville, AR and Northwest Arkansas. Minimal downtime, fully insured, weekend availability. Free quotes.',
   keywords: [
     'commercial movers Fayetteville AR',
     'office moving NWA',

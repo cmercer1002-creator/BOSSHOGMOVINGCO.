@@ -154,7 +154,7 @@ export default function Footer() {
           <p>
             © {new Date().getFullYear()} {COMPANY_NAME}. All rights reserved. Fayetteville, AR.
           </p>
-          <p>Licensed &amp; Insured · Serving Northwest Arkansas</p>
+          <p>Insured &amp; Covered · Serving Northwest Arkansas</p>
         </div>
       </div>
     </footer>

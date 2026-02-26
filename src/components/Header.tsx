@@ -22,15 +22,15 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center shrink-0">
             <Image
               src="/logo.png"
               alt="Boss Hog Moving Co."
-              width={48}
-              height={48}
-              className="h-12 w-auto"
+              width={80}
+              height={80}
+              className="h-16 w-auto"
               priority
             />
           </Link>

@@ -16,7 +16,7 @@ const moves = [
     icon: '🏠',
     label: 'Residential Moving',
     description:
-      'Full-service local and long-distance moves for Fayetteville homes. Licensed, insured, and careful with every item.',
+      'Full-service local and long-distance moves for Fayetteville homes. Insured, professional, and careful with every item.',
     href: '/residential-moving',
     highlight: false,
     badge: null,

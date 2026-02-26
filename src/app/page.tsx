@@ -25,9 +25,9 @@ export const metadata: Metadata = {
 }
 
 const trustBadges = [
-  { icon: '🛡️', label: 'Licensed & Insured', sub: 'Fully covered in Arkansas' },
+  { icon: '🛡️', label: 'Insured & Covered', sub: 'Full liability on every move' },
   { icon: '⭐', label: '5-Star Rated', sub: 'Top-rated on Google' },
-  { icon: '📍', label: 'Local NWA Team', sub: 'Fayetteville-based crew' },
+  { icon: '📍', label: 'Local NWA Team', sub: 'Arkansas roots, NWA home' },
   { icon: '💬', label: 'Free Quotes', sub: 'No obligation, ever' },
 ]
 
@@ -141,19 +141,19 @@ export default function HomePage() {
                 {[
                   {
                     title: 'Locally Owned & Operated',
-                    desc: "We're your neighbors — Fayetteville born and raised. We care about our community and every move we touch.",
+                    desc: "Boss Hog was founded by Cameron Mercer, a Little Rock native and University of Arkansas alumnus, with a team rooted across Arkansas. We're not just passing through — this is home.",
                   },
                   {
                     title: 'UARK Move-Out Specialists',
                     desc: 'We know May is crunch time for UARK families. We have the crew, the trucks, and the experience to make it easy.',
                   },
                   {
-                    title: 'Fully Licensed & Insured',
-                    desc: 'Your belongings are protected. We carry full liability coverage on every move — no shortcuts, ever.',
+                    title: 'Fully Insured',
+                    desc: 'Your belongings are protected on every move. We carry full liability coverage — and we can provide proof of insurance upon request.',
                   },
                   {
-                    title: 'Transparent Pricing',
-                    desc: "No surprise fees. You get a clear quote before we start, and that's what you pay.",
+                    title: 'Upfront, Transparent Pricing',
+                    desc: "You know exactly what you'll pay before we lift a single box. No hidden fees, no surprise charges at the end. If something changes during the move, we tell you first — always.",
                   },
                 ].map((item) => (
                   <li key={item.title} className="flex gap-4">
@@ -194,7 +194,7 @@ export default function HomePage() {
                   { value: '500+', label: 'Moves Completed' },
                   { value: '5★', label: 'Google Rating' },
                   { value: '3+', label: 'Years Serving NWA' },
-                  { value: '100%', label: 'Licensed & Insured' },
+                  { value: '100%', label: 'Insured & Covered' },
                 ].map((stat) => (
                   <div key={stat.label} className="text-center py-4">
                     <div className="text-4xl font-extrabold text-red-400 mb-1">{stat.value}</div>
