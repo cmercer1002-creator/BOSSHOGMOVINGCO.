@@ -203,7 +203,7 @@ export default function HomePage() {
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 text-white">
               <div className="grid grid-cols-2 gap-6">
                 {[
-                  { value: '500+', label: 'Moves Completed' },
+                  { value: '200+', label: 'Moves Completed' },
                   { value: '5★', label: 'Google Rating' },
                   { value: '3+', label: 'Years Serving NWA' },
                   { value: '100%', label: 'Insured & Covered' },
@@ -303,6 +303,27 @@ export default function HomePage() {
             >
               Read All Reviews →
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Watch Us Work */}
+      <section className="py-12 px-4 bg-gray-900">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-2xl font-extrabold text-white mb-6 text-center">
+            Watch Us Work
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <video autoPlay muted loop playsInline className="w-full h-full object-cover">
+                <source src="/rosebowl.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <video autoPlay muted loop playsInline className="w-full h-full object-cover">
+                <source src="/rucker.mp4" type="video/mp4" />
+              </video>
+            </div>
           </div>
         </div>
       </section>

@@ -10,6 +10,7 @@ interface ServiceHeroProps {
   secondaryCTA?: string
   secondaryCTAHref?: string
   showPhone?: boolean
+  videoBg?: string
 }
 
 export default function ServiceHero({
@@ -21,12 +22,21 @@ export default function ServiceHero({
   secondaryCTA = 'Get a Free Quote',
   secondaryCTAHref = '/contact#quote',
   showPhone = true,
+  videoBg,
 }: ServiceHeroProps) {
   const primaryIsExternal = primaryCTAHref.startsWith('http')
 
   return (
-    <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-red-950 text-white py-20 px-4">
-      <div className="max-w-4xl mx-auto text-center">
+    <section className={`relative overflow-hidden text-white py-20 px-4${videoBg ? '' : ' bg-gradient-to-br from-gray-900 via-gray-800 to-red-950'}`}>
+      {videoBg && (
+        <>
+          <video autoPlay muted loop playsInline className="absolute inset-0 w-full h-full object-cover z-0">
+            <source src={videoBg} type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 bg-black/65 z-10" />
+        </>
+      )}
+      <div className={`max-w-4xl mx-auto text-center${videoBg ? ' relative z-20' : ''}`}>
         {badge && (
           <span className="inline-block bg-red-600 text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
             {badge}
