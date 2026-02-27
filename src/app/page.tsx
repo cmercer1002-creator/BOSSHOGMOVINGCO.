@@ -56,8 +56,20 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-red-950 text-white py-20 sm:py-28 px-4">
-        <div className="max-w-5xl mx-auto">
+      <section className="relative overflow-hidden text-white py-20 sm:py-28 px-4">
+        {/* Background video */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover z-0"
+        >
+          <source src="/hero.mp4" type="video/mp4" />
+        </video>
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/60 z-10" />
+        <div className="relative z-20 max-w-5xl mx-auto">
           <div className="text-center mb-10">
             <span className="inline-block bg-red-600 text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-5">
               Fayetteville&apos;s Most Trusted Movers
