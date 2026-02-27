@@ -229,6 +229,52 @@ export default function SummerHoldPage() {
         </div>
       </section>
 
+      {/* Reservation Policy */}
+      <section className="py-14 px-4 bg-amber-50 border-y border-amber-200">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl font-extrabold text-gray-900 mb-6 text-center">
+            Reservation Policy
+          </h2>
+          <div className="bg-white rounded-2xl border border-amber-200 shadow-sm p-7 space-y-4">
+            <p className="text-gray-700 text-sm leading-relaxed">
+              Due to high demand during move-out season, a{' '}
+              <span className="font-bold text-gray-900">$100 non-refundable deposit</span> is required
+              to secure your date.
+            </p>
+            <ul className="space-y-3 text-sm text-gray-700">
+              <li className="flex items-start gap-3">
+                <span className="flex-shrink-0 w-5 h-5 rounded-full bg-amber-100 flex items-center justify-center mt-0.5">
+                  <svg className="w-3 h-3 text-amber-700" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </span>
+                The deposit will be applied toward your total service cost.
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="flex-shrink-0 w-5 h-5 rounded-full bg-amber-100 flex items-center justify-center mt-0.5">
+                  <svg className="w-3 h-3 text-amber-700" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </span>
+                All bookings are final and not eligible for cancellation refunds.
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="flex-shrink-0 w-5 h-5 rounded-full bg-amber-100 flex items-center justify-center mt-0.5">
+                  <svg className="w-3 h-3 text-amber-700" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </span>
+                If you need to reschedule, your $100 deposit can be applied to a future job within
+                12 months (subject to availability).
+              </li>
+            </ul>
+            <p className="text-gray-500 text-xs pt-2 border-t border-amber-100">
+              We reserve the right to fill canceled time slots with other customers.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* What's Included */}
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-3xl mx-auto">
